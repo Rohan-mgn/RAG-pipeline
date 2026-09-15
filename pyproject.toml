@@ -1,0 +1,15 @@
+[project]
+name = "ragpipe"
+version = "0.1.1"
+requires-python = ">=3.12"
+dependencies = ["pypdf", "pymupdf", "numpy"]
+
+[project.optional-dependencies]
+docling = ["docling"]
+embed = ["fastembed"]
+rerank = ["flashrank"]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
